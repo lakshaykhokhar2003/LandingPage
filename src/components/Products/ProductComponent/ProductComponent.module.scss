@@ -1,0 +1,222 @@
+.Products {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  letter-spacing: 0.5px;
+  line-height: 2;
+
+  .isBest {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+
+    .Best {
+      background-color: #f5d4e2;
+      color: #ce276f;
+      font-weight: 500;
+      padding: 5px 10px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      display: flex;
+      align-items: center;
+
+      .Icon {
+        margin: 0 5px;
+        font-size: 1.8rem;
+      }
+    }
+
+    .index {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid #d4c3ff;
+    }
+
+  }
+
+  .imageContent {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 150px;
+    margin-top: 30px;
+
+    img {
+      cursor: pointer;
+    }
+
+    h2, h3 {
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: #1a1a1a;
+      margin: 15px 0;
+    }
+  }
+
+  .Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+    margin: 0 20px;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    span {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 15px 0;
+    }
+
+
+    .Offer {
+      background-color: #f5d4e2;
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #ce276f;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: 10%;
+    }
+
+    .Highlights, .HighlightsRating {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 15px 0;
+      width: 90%;
+      align-self: center;
+    }
+
+    .HighlightRating {
+      border-radius: 5px;
+      padding: 5px 10px;
+      background-color: #e6dbff;
+
+      li {
+        list-style: none;
+        font-weight: 600;
+        margin: 5px 0;
+
+
+        span {
+          color: #3d84ff;
+          margin: 0 5px;
+          padding: 5px 10px;
+          background-color: #d4c3ff;
+          border: 1px solid #c3b0ff;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .whyLove {
+      width: 90%;
+      align-self: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-weight: 600;
+      }
+
+      .checkIcon {
+        margin-right: 10px;
+        color: #3d84ff;
+
+      }
+    }
+
+    .showMore {
+      font-size: 1.5rem;
+      font-weight: 400;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        color: #3d84ff;
+        align-items: center;
+      }
+    }
+
+  }
+
+  .Review {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    min-width: 200px;
+    color: #ce276f;
+
+    .Rating {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f5d4e2;
+      border-radius: 4%;
+      min-width: inherit;
+      padding: 15px 0;
+      box-shadow: 0 20px 40px 0 rgba(206, 39, 111, 0.92);
+
+      h1, {
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+      }
+
+      .Stars {
+        color: #ce276f;
+      }
+    }
+
+    Button {
+      margin: 15px 0;
+      padding: 10px 15px;
+      font-size: 20px;
+      font-weight: lighter;
+      letter-spacing: 1.2px;
+      background-color: #ce276f;
+      color: white;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #dc0361;
+      }
+    }
+  }
+
+}

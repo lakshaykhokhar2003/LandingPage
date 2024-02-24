@@ -1,0 +1,17 @@
+.DealsDiv {
+  margin: 100px 0;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .Wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+}

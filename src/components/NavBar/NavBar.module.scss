@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5d4e2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.Links {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ce276f;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #ff0071;
+    }
+  }
+
+
+}

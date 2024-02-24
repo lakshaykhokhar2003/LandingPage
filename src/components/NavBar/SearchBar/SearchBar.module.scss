@@ -1,0 +1,39 @@
+.search {
+  position: relative;
+  border-radius: 4px;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+  margin: 15px 16px;
+  display: inline;
+  width: 100%;
+
+  &:hover {
+    background-color: #fcf4f8;
+  }
+
+
+  .searchIconWrapper {
+    padding: 6px 0 0 5px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .styledInputBase {
+    color: inherit;
+
+    input {
+      padding: 8px 8px 8px 30px;
+      transition: width 0.3s ease-in-out;
+      width: 100%;
+      @media (min-width: 960px) {
+        width: 240px;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    margin-left: 24px;
+    width: auto;
+  }
+}
