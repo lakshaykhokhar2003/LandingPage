@@ -4,11 +4,17 @@
   margin: 10px 20px;
   letter-spacing: 0.5px;
   line-height: 2;
+  //border-bottom: 1px solid #f5d4e2;
+  //
+  //&:nth-last-child(1) {
+  //  border: none;
+  //}
+
 
   .isBest {
     position: absolute;
     padding: 5px 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -25,7 +31,7 @@
 
       .Icon {
         margin: 0 5px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
 
@@ -34,20 +40,17 @@
       align-items: center;
       justify-content: center;
       margin-top: 5px;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       border: 1px solid #d4c3ff;
     }
-
   }
 
   .imageContent {
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-left: 150px;
     margin-top: 30px;
 
@@ -55,8 +58,8 @@
       cursor: pointer;
     }
 
-    h2, h3 {
-      font-size: 1.5rem;
+    h3 {
+      font-size: 1.3rem;
       font-weight: 200;
       color: #1a1a1a;
       margin: 15px 0;
@@ -71,18 +74,19 @@
     margin: 0 20px;
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: #1a1a1a;
       margin: 0;
     }
 
     h2 {
+      font-size: 1.1rem;
       margin: 0;
     }
 
     span {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 400;
       color: #1a1a1a;
       margin: 15px 0;
@@ -91,18 +95,18 @@
 
     .Offer {
       background-color: #f5d4e2;
-      display: inline-block;
       padding: 5px 10px;
       font-size: 1rem;
       font-weight: 400;
       color: #ce276f;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      width: 10%;
+      max-width: 55px;
+
     }
 
     .Highlights, .HighlightsRating {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 400;
       color: #1a1a1a;
       margin: 15px 0;
@@ -114,12 +118,12 @@
       border-radius: 5px;
       padding: 5px 10px;
       background-color: #e6dbff;
+      margin-bottom: 15px;
 
       li {
         list-style: none;
         font-weight: 600;
         margin: 5px 0;
-
 
         span {
           color: #3d84ff;
@@ -146,7 +150,6 @@
       .checkIcon {
         margin-right: 10px;
         color: #3d84ff;
-
       }
     }
 
@@ -161,13 +164,12 @@
         align-items: center;
       }
     }
-
   }
 
   .Review {
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 50px;
     min-width: 200px;
     color: #ce276f;
@@ -175,21 +177,23 @@
     .Rating {
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
       background-color: #f5d4e2;
       border-radius: 4%;
       min-width: inherit;
+      min-height: 170px;
       padding: 15px 0;
       box-shadow: 0 20px 40px 0 rgba(206, 39, 111, 0.92);
 
       h1, {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 500;
         margin: 0;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 400;
         margin: 0 0 10px 0;
       }
@@ -202,8 +206,8 @@
     Button {
       margin: 15px 0;
       padding: 10px 15px;
-      font-size: 20px;
-      font-weight: lighter;
+      font-size: 1.2rem;
+      font-weight: 100;
       letter-spacing: 1.2px;
       background-color: #ce276f;
       color: white;
@@ -219,4 +223,212 @@
     }
   }
 
+  @media (min-width: 0) and (max-width: 820px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+
+    .isBest {
+      left: 0;
+
+      .Best {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+      }
+
+      .index {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    .imageContent {
+      margin-left: 0;
+      margin-top: 50px;
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .Details {
+      letter-spacing: 0;
+      width: 90%;
+      margin: 0 10px;
+
+      h1 {
+        font-size: 0.8rem;
+      }
+
+      h2 {
+        font-size: 0.7rem;
+      }
+
+      span {
+        font-size: 0.6rem;
+      }
+
+      .Offer {
+        max-width: 45px;
+        font-size: 0.6rem;
+      }
+
+      .Highlights {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+      }
+
+      .HighlightRating {
+        max-width: 200px;
+        font-size: 0.7rem;
+
+        span {
+          padding: 5px;
+        }
+      }
+
+      .whyLove {
+        font-size: 0.8rem;
+
+        li {
+          font-weight: 500;
+        }
+
+        .checkIcon {
+          font-size: 1.3rem;
+        }
+      }
+
+      .showMore {
+        font-size: 1.2rem;
+      }
+    }
+
+    .Review {
+      gap: 0;
+      width: 100%;
+      justify-content: space-evenly;
+
+
+      .Rating {
+        min-height: 50px;
+        width: 95%;
+        align-self: center;
+
+        h1 {
+          font-size: 0.8rem;
+        }
+
+        h2 {
+          font-size: 0.6rem;
+          font-weight: 500;
+        }
+
+        .Stars {
+          font-size: 0.8rem;
+        }
+      }
+
+      Button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        font-weight: 400;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 1500px) {
+    letter-spacing: 0.4px;
+
+    .isBest {
+      .Best {
+        font-size: 1rem;
+        padding: 5px 10px;
+      }
+
+      .index {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    .imageContent {
+      margin-left: 80px;
+      margin-top: 50px;
+    }
+
+    .Details {
+      width: 100%;
+      margin: 0 20px;
+
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      span {
+        font-size: 1.1rem;
+      }
+
+      .Offer {
+        max-width: 55px;
+        font-size: 1rem;
+      }
+
+      .Highlights, .HighlightsRating {
+        font-size: 1.1rem;
+        width: 90%;
+        line-height: 1.6;
+        margin: 7.5px 0;
+      }
+
+      .HighlightRating {
+        width: 90%;
+        font-size: 1.1rem;
+
+        span {
+          padding: 5px 10px;
+        }
+      }
+
+      .whyLove {
+        font-size: 1.1rem;
+
+        li {
+          font-weight: 600;
+        }
+
+        .checkIcon {
+          font-size: 1.5rem;
+        }
+      }
+
+      .showMore {
+        font-size: 1.5rem;
+      }
+    }
+    .Review {
+      .Rating {
+        padding: 10px 0;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        .Stars {
+          font-size: 1.2rem;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }
