@@ -1,11 +1,3 @@
-export const capitalize = (str: string): string => {
-    return str
-        .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-};
-
-
 const months: string[] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 export const getCurrentTime = (): string => {

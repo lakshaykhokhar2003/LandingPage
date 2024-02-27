@@ -8,8 +8,8 @@ export interface HighlightRating {
 }
 
 export interface ProductComponentProps {
-    bestChoice?: boolean;
-    bestValue?: boolean;
+    bestChoice?: boolean
+    bestValue?: boolean
     number: number;
     image: string;
     imageTitle: string;
@@ -31,4 +31,8 @@ export interface DealsComponentProps {
     description: string;
     discountPrice: number;
     originalPrice: number;
+}
+
+export interface feature extends Partial<ProductComponentProps> {
+    show: boolean;
 }
