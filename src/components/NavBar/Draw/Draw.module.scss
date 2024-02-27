@@ -1,0 +1,17 @@
+
+.List {
+  height: 100%;
+  background-color: #f5d4e2;
+
+  a {
+    text-decoration: none;
+    color: #ce276f;
+  }
+}
+
+
+@media (min-width: 821px) {
+  .Drawer, .List {
+    display: none;
+  }
+}
