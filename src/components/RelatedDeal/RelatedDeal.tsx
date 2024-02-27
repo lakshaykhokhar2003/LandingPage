@@ -17,7 +17,7 @@ const RelatedDeal = () => {
 
     ));
     return <div className={classes.DealsDiv}>
-        <h1>Related deals you might like for</h1>
+        <h1>Related deals you might like :-</h1>
         <div className={classes.Wrapper}>
             {dealsComponents}
         </div>

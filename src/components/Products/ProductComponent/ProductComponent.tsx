@@ -58,7 +58,7 @@ export const ProductComponent = ({
         <div className={classes.Details}>
             <span><h1>{heading}</h1>{description}</span>
             {offer && <div className={classes.Offer}>{offer}</div>}
-            <h2>Main Highlights</h2>
+            <h2>Main Highlights :- </h2>
             {content}
             {whyLove && (
                 <>

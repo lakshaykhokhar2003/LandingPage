@@ -20,7 +20,7 @@ function App() {
                 <Signup/>
             </div>
             <Footer/>
-            <ToastContainer position="top-right" limit={1} closeOnClick={true} draggable={true} pauseOnHover={true}/>
+            <ToastContainer position="top-right" limit={2} closeOnClick={true} draggable={true} pauseOnHover={true}/>
         </div>
     )
 }

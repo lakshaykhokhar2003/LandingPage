@@ -9,7 +9,7 @@ const Heading = () => {
     const options = ["Top Relevant", "Newest", "Oldest"];
     return <div className={classes.HeaderDiv}>
         <h1>Best Website builders in the US</h1>
-        <div className={classes.DropMenu}>
+        <div className={classes.Info}>
             <div className={classes.LastUpdated}>
                 <CheckCircleOutlineOutlinedIcon className={classes.icon}/><span>Last Updated - {getCurrentTime()}</span>
                 <ErrorOutlineOutlinedIcon className={classes.icon}/> <span>Advertising Disclosure</span>
